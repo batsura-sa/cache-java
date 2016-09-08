@@ -1,0 +1,1 @@
+java -jar ./target/j262-cache.jar
