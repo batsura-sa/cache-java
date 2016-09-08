@@ -22,9 +22,9 @@ public class CacheTest extends TestCase {
 			 cahe.put(new Integer(i), new Integer(-i));
 		 }
 		 
-		 assertNull("Число "+1+" должно быть в кэш", cahe.get(1));
-		 assertNotNull("Число "+(maxCount-1)+" должно быть в кэш", cahe.get(maxCount-1));
-		 assertNull("Число "+(maxCount)+" не должно быть в кэш", cahe.get(maxCount));
+		 assertNull("Number "+1+" leaved cache, but we found it", cahe.get(1));
+		 assertNotNull("Number "+(maxCount-1)+" must be in cache", cahe.get(maxCount-1));
+		 assertNull("Number "+(maxCount)+" don't be in cache", cahe.get(maxCount));
 		
 	}
 
